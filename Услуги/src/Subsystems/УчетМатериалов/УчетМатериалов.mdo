@@ -12,4 +12,5 @@
   </picture>
   <content>Catalog.Номенклатура</content>
   <content>Catalog.Склады</content>
+  <content>Document.ПриходнаяНакладная</content>
 </mdclass:Subsystem>

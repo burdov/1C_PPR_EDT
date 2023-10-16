@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f41babaa-bddf-40cf-b7b3-10bc056f5a69">
+  <producedTypes>
+    <objectType typeId="6fc34e23-aa94-41d8-b3d6-a45fc2736b30" valueTypeId="6ff7f63e-3f75-406c-8f75-2d53f72c2cb1"/>
+    <refType typeId="542d4ca7-bff4-4ef8-a592-052f5cb91403" valueTypeId="77271fdf-b7cd-4d3c-9cb8-e18680fe68c7"/>
+    <selectionType typeId="ba589562-b80a-44c4-a4a8-cf3a513da74e" valueTypeId="139888c2-dc14-4cf4-87be-de67c641b9f2"/>
+    <listType typeId="793b4b8f-11c0-4ce4-bf3f-51c785aa48e4" valueTypeId="c2960e6c-652f-4c2a-a2d2-395f8ca2c664"/>
+    <managerType typeId="cc227613-8e70-43db-8ea3-cf93c6c83d8b" valueTypeId="07b45159-dfb4-4faf-aabd-1c7bfd90476d"/>
+  </producedTypes>
+  <name>ОказаниеУслуги</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оказание услуги</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ОказаниеУслуги.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Оказание услуг</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="2598cb10-bc4a-4b80-a3d7-332cc6b8fa54">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Склады.Основной</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="db005ca9-0239-47fb-a080-57567aee788c">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fa399dc6-4248-4ae6-af2c-a167c4c287e6">
+    <name>Мастер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мастер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="12dd6406-28bb-407d-9cff-8737beccce56">
+    <producedTypes>
+      <objectType typeId="74995ff9-bb52-4328-a1f2-41a6b08f5bce" valueTypeId="8d4124f1-6343-428d-a667-a588ecc8b31b"/>
+      <rowType typeId="8d59632d-4ae5-4c37-8ddd-79bb7974254d" valueTypeId="0f77f74a-1807-41b4-8d42-42cdcd8def07"/>
+    </producedTypes>
+    <name>ПереченьНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перечень номенклатуры</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <attributes uuid="eedf5506-6791-4e41-89dd-b3de90656164">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4b502e8a-1089-4add-9268-39006849d3e1">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4be17944-de32-459c-ab55-00a5094000bd">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="46843e65-8c45-4d89-9c44-d44f7002c6e8">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
