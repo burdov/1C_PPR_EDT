@@ -10,4 +10,6 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.Бухгалтерия</picture>
   </picture>
+  <content>Catalog.Клиенты</content>
+  <content>Catalog.Номенклатура</content>
 </mdclass:Subsystem>
