@@ -48,6 +48,7 @@
   <commonPictures>CommonPicture.Материалы</commonPictures>
   <commonPictures>CommonPicture.Предприятие</commonPictures>
   <commonPictures>CommonPicture.Услуги</commonPictures>
+  <commonModules>CommonModule.ПроведениеРасчетов</commonModules>
   <commonModules>CommonModule.РаботаСДокументами</commonModules>
   <commonModules>CommonModule.РаботаСоСправочниками</commonModules>
   <commonModules>CommonModule.Серверный</commonModules>
@@ -64,9 +65,12 @@
   <documents>Document.ПриходнаяНакладная</documents>
   <enums>Enum.ВидыНоменклатуры</enums>
   <reports>Report.ВыручкаМастеров</reports>
+  <reports>Report.ДиаграммаНачислений</reports>
   <reports>Report.Материалы</reports>
+  <reports>Report.НачисленияСотрудникам</reports>
   <reports>Report.ОборотноСальдоваяВедомость</reports>
   <reports>Report.ОстаткиМатериаловПоСвойствам</reports>
+  <reports>Report.Перерасчет</reports>
   <reports>Report.ПереченьУслуг</reports>
   <reports>Report.РеестрДокументовОказаниеУслуги</reports>
   <reports>Report.РейтингКлиентов</reports>
