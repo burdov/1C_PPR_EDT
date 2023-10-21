@@ -79,6 +79,33 @@
         </for>
       </visible>
     </visibilityFragments>
+    <visibilityFragments>
+      <command>CommonForm.ОбщиеНастройки.StandardCommand.Open</command>
+      <visible>
+        <for>
+          <value>true</value>
+          <role>Role.Администратор</role>
+        </for>
+      </visible>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>DataProcessor.ОбменДанными.StandardCommand.Open</command>
+      <visible>
+        <for>
+          <value>true</value>
+          <role>Role.Администратор</role>
+        </for>
+      </visible>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>DataProcessor.ОбменСОтделениями.StandardCommand.Open</command>
+      <visible>
+        <for>
+          <value>true</value>
+          <role>Role.Администратор</role>
+        </for>
+      </visible>
+    </visibilityFragments>
   </commandsVisibility>
   <commandsPlacement>
     <placementFragments>
@@ -94,6 +121,12 @@
       <commands>Report.Материалы.StandardCommand.Open</commands>
       <commands>Report.НачисленияСотрудникам.StandardCommand.Open</commands>
       <commands>Report.ОборотноСальдоваяВедомость.StandardCommand.Open</commands>
+    </placementFragments>
+    <placementFragments>
+      <group>ActionsPanelTools</group>
+      <commands>DataProcessor.ОбменДанными.StandardCommand.Open</commands>
+      <commands>CommonForm.ОбщиеНастройки.StandardCommand.Open</commands>
+      <commands>DataProcessor.ОбменСОтделениями.StandardCommand.Open</commands>
     </placementFragments>
   </commandsPlacement>
 </cmi:CommandInterface>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExchangePlan xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a3e874b-1f19-4154-ad1d-ca0cd4c75808" thisNode="6e5c4442-b195-478e-a3d7-1c7578147c69">
+  <producedTypes>
+    <objectType typeId="053fc8e7-ced8-443d-8eae-045387b042d7" valueTypeId="cbbb0527-68d2-4f2d-8754-a5984ab92372"/>
+    <refType typeId="ce724026-d3b5-48f2-a71d-d11a5b2ab1e9" valueTypeId="27eb23cd-ecf7-45bd-94e9-86bcd4fc9d45"/>
+    <selectionType typeId="fce6c4d3-566c-41e8-8d63-d4dbd53928aa" valueTypeId="b0b3900e-d07f-446b-a5a9-566708c96b6e"/>
+    <listType typeId="6a7ff07d-6887-438a-b2ce-fbcc95b76809" valueTypeId="0288411a-cbf5-422f-bef9-aa7e9e27b0b3"/>
+    <managerType typeId="d5a0b200-dec4-40b4-9122-5ac76f438529" valueTypeId="ab31ea70-bb0e-4acd-ad20-9b08fd46f7d0"/>
+  </producedTypes>
+  <name>Отделения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отделения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ExchangePlan.Отделения.StandardAttribute.Code</inputByString>
+  <inputByString>ExchangePlan.Отделения.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Отделение</value>
+  </objectPresentation>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <content>
+    <mdObject>Catalog.ВариантыНоменклатуры</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Catalog.ДополнительныеСвойстваНоменклатуры</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Catalog.Клиенты</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Catalog.Номенклатура</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Catalog.Склады</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Catalog.Сотрудники</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Document.ОказаниеУслуги</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Document.ПриходнаяНакладная</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>ChartOfCharacteristicTypes.СвойстваНоменклатуры</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>InformationRegister.ЗначенияСвойствНоменклатуры</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>InformationRegister.Цены</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>AccumulationRegister.ОстаткиМатериалов</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>AccumulationRegister.Продажи</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>AccumulationRegister.СтоимостьМатериалов</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>ExchangePlan.Отделения.Form.ФормаСписка</defaultListForm>
+  <distributedInfoBase>true</distributedInfoBase>
+  <forms uuid="12d6c2cd-81b8-4f84-a5c9-f9df79dedf72">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExchangePlan>
