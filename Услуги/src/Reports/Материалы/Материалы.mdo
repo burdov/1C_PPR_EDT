@@ -19,4 +19,16 @@
     </synonym>
     <templateType>DataCompositionSchema</templateType>
   </templates>
+  <commands uuid="629a3499-0ad1-4dbf-bfeb-f4b0284913c3">
+    <name>ОстаткиПоСкладу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остатки по складу</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.Склады</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
 </mdclass:Report>
